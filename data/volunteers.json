@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Jane Doe",
+    "address": "12 Hope Street",
+    "whatsapp": "08098765432",
+    "unit": "Choir",
+    "registeredAt": "2025-07-08T23:20:45.539Z"
+  },
+  {
+    "name": "Ajibade Paul",
+    "address": "No 4 Shalom House Shalom Street Araromi Oyo",
+    "whatsapp": "07063934060",
+    "unit": "Choir",
+    "registeredAt": "2025-07-11T12:19:25.510Z"
+  }
+]
