@@ -16,3 +16,14 @@ Thumbs.db
 # IDE files
 .vscode/
 .idea/
+
+# Ignore archives
+*.zip
+*.rar
+*.tar
+*.gz
+
+# Node.js
+node_modules/
+.env
+
