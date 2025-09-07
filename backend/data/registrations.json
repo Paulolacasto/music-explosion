@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Paul Ajibade",
+    "email": "paul@example.com",
+    "phone": "08012345678",
+    "age": 22,
+    "instruments": [
+      "Piano",
+      "Violin",
+      "Voice Training"
+    ],
+    "registeredAt": "2025-07-08T22:48:48.892Z"
+  }
+]

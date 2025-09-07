@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – THE MUSIC EXPLOSION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body::before {
+      content: "";
+      background: url('images/logo-watermark.png') no-repeat center center;
+      background-size: 1000px;
+      opacity: 0.2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white relative">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo and Title -->
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Logo" class="w-16 h-10 md:w-20">
+        <div>
+          <h1 class="text-xl md:text-2xl font-bold leading-tight">THE MUSIC EXPLOSION</h1>
+          <p class="text-xs md:text-sm italic text-gray-200">…partake, perfect, perform</p>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm md:text-base">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="register.html" class="hover:underline">Register</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-blue-800 text-white px-4 pb-4 space-y-2">
+      <a href="index.html" class="block">Home</a>
+      <a href="register.html" class="block">Register</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="py-12 px-4 md:px-20">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Our History, Vision, and Mission</h2>
+
+    <div class="max-w-4xl mx-auto space-y-10 text-base md:text-lg leading-relaxed">
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-2">Our History</h3>
+        <p>
+          THE MUSIC EXPLOSION began in [Year] with a vision to raise a generation of skillful and passionate musicians through annual musical empowerment. It started with a few volunteers and has now grown into a week-long experience attracting participants across communities and cities.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-2">Our Vision</h3>
+        <p>
+          Empowering and nurturing the young community of passionate upcoming musicians, building their skills and understanding,
+          inspiring their creativity, confidence and spiritual growth to sing to the Lord with harmonious voices (Psalm 47:7).
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-2">Our Mission</h3>
+        <p>
+          Imparting and Impacting lives for a better music ministry.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-center md:text-left">
+      <div>
+        <h4 class="font-bold text-lg mb-2">Contact</h4>
+        <p>Email: themusicexplosion1@gmail.com</p>
+        <p>Phone: +234 703 0707 080</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Socials</h4>
+        <p>Facebook | Instagram</p>
+        <p>The Music Explosion | the_musicexplosion</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Newsletter</h4>
+        <p>Subscribe for updates.</p>
+        <a href="admin-login.html" class="hover:underline">Admin Login</a>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-sm">
+      &copy; 2025 THE MUSIC EXPLOSION. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

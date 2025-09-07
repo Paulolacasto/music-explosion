@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Events – THE MUSIC EXPLOSION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body::before {
+      content: "";
+      background: url('images/logo-watermark.png') no-repeat center center;
+      background-size: 1000px;
+      opacity: 0.2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-blue-900 text-white">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="Music Explosion Logo" class="w-20 h-10">
+      <div>
+        <h1 class="text-2xl font-bold leading-tight">THE MUSIC EXPLOSION</h1>
+        <p class="text-sm italic text-gray-200">…partake, perfect, perform</p>
+      </div>
+    </div>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="register.html" class="hover:underline">Register</a>
+      <a href="about.html" class="hover:underline">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Past Events Section -->
+<section class="py-16 px-4 md:px-20 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-10">Our Past Events</h2>
+
+  <!-- Chairman's Welcome -->
+  <div class="grid md:grid-cols-2 gap-8 mb-10 items-center">
+    <img src="images/sunnel.jpg" alt="Chairman 2024" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">2024 Welcome Address: CONSECRATION</h3>
+      <p class="text-gray-700">
+        The 2024 Oyo Music Explosion was themed "Consecration," inspired by Colossians 1:16b, emphasizing that all things were created by and for God. 
+        Participants and instructors were reminded that every skill and virtue shared during the event is ultimately for the Lord. 
+        The message highlighted the need to offer these gifts back to God in purity and dedication. Just as God accepted Abel’s offering because his person was accepted first, 
+        the impact of our ministry depends on the consecration of our hearts. Gratitude was expressed to the many leaders, family members, and supporters whose contributions 
+        made the event a success. Special appreciation went to Revd Philip Bukola Oyewale and other church leaders, along with heartfelt thanks to family members for their unwavering support.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Chairman, Ajibade Sunday Adebowale</p>
+    </div>
+  </div>
+
+  <!-- Pastor's Exhortation -->
+  <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+    <img src="images/papa.jpg" alt="Pastor 2024" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">HOW TO BECOME A GREAT MUSIC/WORSHIP LEADER</h3>
+      <p class="text-gray-700">
+        Becoming a great music or worship leader requires a heart devoted to God and a love for people, recognizing that 
+        leadership is a service. True leaders guide the choir and congregation toward sincere worship, cultivating 
+        humility, strong biblical knowledge, organizational ability, clear communication, and musical skill. Leaders 
+        must continually develop themselves and their teams while remaining teachable and available for God’s use. Above 
+        all, they trust God for their reward rather than seeking human praise.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Revd Dr. Femi Oyedokun, Music Pastor, IBC OYO</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery -->
+  <h3 class="text-xl font-bold mb-4">2024 Event Photos</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="images/event2024_cover.jpg" alt="Event Cover" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_1.jpg" alt="Event Photo 1" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_2.jpg" alt="Event Photo 2" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_3.jpg" alt="Event Photo 3" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_4.jpg" alt="Event Photo 4" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_5.jpg" alt="Event Photo 5" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_6.jpg" alt="Event Photo 6" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_7.jpg" alt="Event Photo 7" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_8.jpg" alt="Event Photo 8" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2024_9.jpg" alt="Event Photo 9" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+  </div>
+
+<!-- Chairman's Welcome -->
+  <div class="grid md:grid-cols-2 gap-8 mb-10 items-center">
+    <img src="images/sunnel1.jpg" alt="Chairman 2023" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">2023 Welcome Address: CONSECRATION</h3>
+      <p class="text-gray-700">
+        The 2024 Oyo Music Explosion was themed "Consecration," inspired by Colossians 1:16b, emphasizing that all things were created by and for God. 
+        Participants and instructors were reminded that every skill and virtue shared during the event is ultimately for the Lord. 
+        The message highlighted the need to offer these gifts back to God in purity and dedication. Just as God accepted Abel’s offering because his person was accepted first, 
+        the impact of our ministry depends on the consecration of our hearts. Gratitude was expressed to the many leaders, family members, and supporters whose contributions 
+        made the event a success. Special appreciation went to Revd Philip Bukola Oyewale and other church leaders, along with heartfelt thanks to family members for their unwavering support.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Chairman, Ajibade Sunday Adebowale</p>
+    </div>
+  </div>
+
+  <!-- Pastor's Exhortation -->
+  <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+    <img src="images/papa.jpg" alt="Pastor 2023" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">HOW TO BECOME A GREAT MUSIC/WORSHIP LEADER</h3>
+      <p class="text-gray-700">
+        Becoming a great music or worship leader requires a heart devoted to God and a love for people, recognizing that leadership is a service. 
+        True leaders guide the choir and congregation toward sincere worship, cultivating humility, strong biblical knowledge, organizational ability, clear communication, and musical skill. 
+        Leaders must continually develop themselves and their teams while remaining teachable and available for God’s use. Above all, they trust God for their reward rather than seeking human praise.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Revd Dr. Femi Oyedokun, Music Pastor, IBC OYO</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery -->
+  <h3 class="text-xl font-bold mb-4">2023 Event Photos</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="images/event2023_cover.jpg" alt="Event Cover" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_1.jpg" alt="Event Photo 1" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_2.jpg" alt="Event Photo 2" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_3.jpg" alt="Event Photo 3" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_4.jpg" alt="Event Photo 4" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_5.jpg" alt="Event Photo 5" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_6.jpg" alt="Event Photo 6" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_7.jpg" alt="Event Photo 7" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_8.jpg" alt="Event Photo 8" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_9.jpg" alt="Event Photo 9" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_10.jpg" alt="Event Photo 10" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_11.jpg" alt="Event Photo 11" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_12.jpg" alt="Event Photo 12" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_13.jpg" alt="Event Photo 13" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_14.jpg" alt="Event Photo 14" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_15.jpg" alt="Event Photo 15" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_16.jpg" alt="Event Photo 16" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_17.jpg" alt="Event Photo 17" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_18.jpg" alt="Event Photo 18" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_19.jpg" alt="Event Photo 19" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)"> 
+    <img src="images/event2023_20.jpg" alt="Event Photo 20" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_21.jpg" alt="Event Photo 21" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_22.jpg" alt="Event Photo 22" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_23.jpg" alt="Event Photo 23" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_24.jpg" alt="Event Photo 24" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_25.jpg" alt="Event Photo 25" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2023_26.jpg" alt="Event Photo 26" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">   
+  </div>
+
+  <!-- Chairman's Welcome -->
+  <div class="grid md:grid-cols-2 gap-8 mb-10 items-center">
+    <img src="images/sunnel2.jpg" alt="Chairman 2022" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">2022 Welcome Address: TOGETHER IN UNITY</h3>
+      <p class="text-gray-700">
+        The welcome address emphasizes the importance of unity, cooperation, and togetherness in achieving success, 
+        drawing from biblical examples such as Jesus involving others in creation to highlight the power of collective 
+        effort. Just as musical instruments blend beautifully when played in harmony, the Music Ministry thrives on unity 
+        of purpose to fulfill spiritual assignments pleasing to God. Participants of the 2022 Music Explosion Workshop 
+        and Concert are encouraged to embrace a teachable spirit, build meaningful relationships, and allow the Holy 
+        Spirit to guide them throughout the program and beyond. Appreciation is extended to all supporters, committee 
+        members, church leaders, and ministry teams whose dedication has sustained this vision, with prayers that their 
+        efforts will be richly rewarded. The event theme, "Partake to Perfect and Perform," urges participants to apply 
+        what they learn for God’s glory.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Chairman, Ajibade Sunday Adebowale</p>
+    </div>
+  </div>
+
+  <!-- Pastor's Exhortation -->
+  <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+    <img src="images/papa.jpg" alt="Pastor 2022" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">MUSIC AND CHRISTIAN WORSHIP; WHY MUSIC ALL THE TIME?</h3>
+      <p class="text-gray-700">
+        The message highlights that music, especially in Christian worship, is far more than sound, harmony, or style; 
+        it is centered on Jesus Christ, who is the true source of every good music. Music is a multifaceted discipline—
+        scientific, mathematical, historical, and artistic—but above all, it is a spiritual art that brings humanity 
+        closer to God. In the church, music plays a vital role in expressing awe, worship, and unity among believers, 
+        pointing hearts toward God rather than self. Congregational singing unites all generations in shared worship and 
+        reflects the theology of the church. Praise through music invites God’s presence, opens doors of blessing, and 
+        brings comfort, joy, and strength amidst life’s uncertainties. Believers are encouraged to sing joyfully, knowing 
+        that music remains a constant source of hope and connection to the divine.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Revd Dr. Femi Oyedokun, Music Pastor, IBC OYO</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery -->
+  <h3 class="text-xl font-bold mb-4">2022 Event Photos</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="images/event2022_cover.jpg" alt="Event Cover" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_1.jpg" alt="Event Photo 1" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_2.jpg" alt="Event Photo 2" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_3.jpg" alt="Event Photo 3" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_4.jpg" alt="Event Photo 4" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_5.jpg" alt="Event Photo 5" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_6.jpg" alt="Event Photo 6" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_7.jpg" alt="Event Photo 7" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_8.jpg" alt="Event Photo 8" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_9.jpg" alt="Event Photo 9" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_10.jpg" alt="Event Photo 10" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_11.jpg" alt="Event Photo 11" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_12.jpg" alt="Event Photo 12" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_13.jpg" alt="Event Photo 13" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_14.jpg" alt="Event Photo 14" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_15.jpg" alt="Event Photo 15" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_16.jpg" alt="Event Photo 16" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_17.jpg" alt="Event Photo 17" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_18.jpg" alt="Event Photo 18" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_19.jpg" alt="Event Photo 19" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)"> 
+    <img src="images/event2022_20.jpg" alt="Event Photo 20" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_21.jpg" alt="Event Photo 21" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_22.jpg" alt="Event Photo 22" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_23.jpg" alt="Event Photo 23" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_24.jpg" alt="Event Photo 24" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_25.jpg" alt="Event Photo 25" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_26.jpg" alt="Event Photo 26" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_27.jpg" alt="Event Photo 27" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_28.jpg" alt="Event Photo 28" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_29.jpg" alt="Event Photo 29" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_30.jpg" alt="Event Photo 30" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_31.jpg" alt="Event Photo 31" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_32.jpg" alt="Event Photo 32" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_33.jpg" alt="Event Photo 33" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_34.jpg" alt="Event Photo 34" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_35.jpg" alt="Event Photo 35" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_36.jpg" alt="Event Photo 36" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_37.jpg" alt="Event Photo 37" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_38.jpg" alt="Event Photo 38" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_39.jpg" alt="Event Photo 39" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_40.jpg" alt="Event Photo 40" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_41.jpg" alt="Event Photo 41" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_42.jpg" alt="Event Photo 42" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_43.jpg" alt="Event Photo 43" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_44.jpg" alt="Event Photo 44" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_45.jpg" alt="Event Photo 45" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_46.jpg" alt="Event Photo 46" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_47.jpg" alt="Event Photo 47" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_48.jpg" alt="Event Photo 48" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_49.jpg" alt="Event Photo 49" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_50.jpg" alt="Event Photo 50" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)"> 
+    <img src="images/event2022_51.jpg" alt="Event Photo 51" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_52.jpg" alt="Event Photo 52" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_53.jpg" alt="Event Photo 53" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_54.jpg" alt="Event Photo 54" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_55.jpg" alt="Event Photo 55" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_56.jpg" alt="Event Photo 56" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_57.jpg" alt="Event Photo 57" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_58.jpg" alt="Event Photo 58" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_59.jpg" alt="Event Photo 59" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2022_60.jpg" alt="Event Photo 60" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">   
+  </div>
+
+   <!-- Chairman's Welcome -->
+  <div class="grid md:grid-cols-2 gap-8 mb-10 items-center">
+    <img src="images/sunnel1.jpg" alt="Chairman 2021" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">2021 Welcome Address: A PURE HEART</h3>
+      <p class="text-gray-700">
+        All glory is given to God for the opportunity to gather again for the 13th edition of the Oyo Music Explosion 
+        Music Workshop and Concert after a pause due to the COVID-19 outbreak. This year’s theme, “A Pure Heart” from 
+        Matthew 5:1-16, reminds Christians to cultivate hearts free from sin, hatred, and unforgiveness, and instead 
+        filled with love, purity, and joy, reflecting God’s light to the world. Participants are encouraged to walk in 
+        God's ways and fulfill His expectations. The Chairman, Ajibade Sunday, expresses gratitude to the leadership and 
+        members of Immanuel Baptist Church, all ministers, music leaders, instructors, churches, and participants for 
+        their consistent support, praying that their labor in God’s vineyard will be richly rewarded. Special thanks 
+        are also extended to his family and the organizing committee for their unwavering support, as he warmly welcomes 
+        everyone to this year’s event, praying they leave blessed and empowered for greater service.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Chairman, Ajibade Sunday Adebowale</p>
+    </div>
+  </div>
+
+  <!-- Pastor's Exhortation -->
+  <div class="grid md:grid-cols-2 gap-8 mb-12 items-center">
+    <img src="images/papa.jpg" alt="Pastor 2021" class="w-full md:w-72 rounded-full mx-auto">
+    <div>
+      <h3 class="text-xl font-bold mb-2">MUSIC AND CHRISTIAN WORSHIP</h3>
+      <p class="text-gray-700">
+        Music is a vital part of Christian worship, created by God as a gift to humanity for fellowship, edification, 
+        and, most importantly, as a means of offering praise to Him. Christian music, which includes church music, 
+        sacred music, and gospel music, plays a key role in worship and evangelism, expressing biblical truths and 
+        drawing believers closer to God. Church music refers to music used in liturgical services, sacred music includes 
+        psalms and hymns often practiced in orthodox churches, and gospel music conveys the message of salvation and hope 
+        rooted in scripture. Music in worship fulfills God’s command to sing, creates a unique connection between 
+        believers and God beyond spoken words, teaches the gospel, and allows believers to express their love for God 
+        with their whole being. It unites worshippers, reinforces faith, and enriches the act of worship through various 
+        expressions and postures. Ultimately, sacred music is a divine tool that transforms hearts and helps believers
+        worship God sincerely and joyfully, encouraging them to find musical expressions that stir their hearts toward 
+        true worship.
+      </p>
+      <p class="mt-4 text-sm text-gray-500 italic">- Revd Dr. Femi Oyedokun, Music Pastor, IBC OYO</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery -->
+  <h3 class="text-xl font-bold mb-4">2021 Event Photos</h3>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="images/event2021_cover.jpg" alt="Event Cover" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_1.jpg" alt="Event Photo 1" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_2.jpg" alt="Event Photo 2" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_3.jpg" alt="Event Photo 3" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_4.jpg" alt="Event Photo 4" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_5.jpg" alt="Event Photo 5" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_6.jpg" alt="Event Photo 6" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_7.jpg" alt="Event Photo 7" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_8.jpg" alt="Event Photo 8" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_9.jpg" alt="Event Photo 9" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_10.jpg" alt="Event Photo 10" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_11.jpg" alt="Event Photo 11" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_12.jpg" alt="Event Photo 12" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">
+    <img src="images/event2021_13.jpg" alt="Event Photo 13" class="rounded shadow hover:scale-105 transition-transform cursor-pointer" onclick="openModal(this.src)">  
+  </div>
+
+  <!-- Music Explosion Anthem & Hymn -->
+<section class="py-16 px-4 md:px-20 bg-white">
+  <h2 class="text-3xl font-bold text-center mb-10"></h2>
+
+  <div class="grid md:grid-cols-2 gap-10 text-center md:text-left">
+    
+    <!-- Anthem -->
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Music Explosion Anthem</h3>
+      <p class="italic leading-relaxed">
+        SINGLE VOICE: I was glad when they said unto me <br>
+        RESPONSE: Let us go into the house of the Lord <br>
+        CALL: O come! O come! <br>
+        RESPONSE: O come! <br>
+        Let us serve the Lord <br>
+        O come! <br>
+        Let us serve the Lord <br>
+        With all the gladness <br>
+        With all the joy <br>
+        And the fullness of our hearts <br>
+        O come! O come <br>
+        O come let's serve the Lord <br>
+        O come let's serve the Lord <br><br>
+
+        SINGLE VOICE: E fayo sin Oluwa <br>
+        Eyin eniyan gbogbo <br>
+        Aanu Oluwa ko nipekun <br>  
+        Titi ayeraye
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Modal for Enlarged Images -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <img id="modalImage" class="max-h-[90vh] rounded shadow">
+  <button onclick="closeModal()" class="absolute top-5 right-5 text-white text-2xl">&times;</button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6 text-center">
+  &copy; 2025 THE MUSIC EXPLOSION. All rights reserved.
+</footer>
+
+<!-- Scripts -->
+<script>
+  function openModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>

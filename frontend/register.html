@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register – THE MUSIC EXPLOSION</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-blue-900 text-white">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="Logo" class="w-20 h-10">
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold leading-tight">THE MUSIC EXPLOSION</h1>
+        <p class="text-xs md:text-sm italic text-gray-200">…partake, perfect, perform</p>
+      </div>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="register.html" class="hover:underline font-bold">Register</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="events.html" class="hover:underline">Past Events</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <nav id="mobileMenu" class="hidden flex-col space-y-2 px-4 pb-4 md:hidden bg-blue-800">
+    <a href="index.html" class="block hover:underline">Home</a>
+    <a href="register.html" class="block hover:underline font-bold">Register</a>
+    <a href="about.html" class="block hover:underline">About</a>
+    <a href="events.html" class="block hover:underline">Past Events</a>
+    <a href="contact.html" class="block hover:underline">Contact</a>
+  </nav>
+</header>
+
+<!-- Registration Form -->
+<section class="py-16 px-4 md:px-20">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Register for THE MUSIC EXPLOSION 2025</h2>
+
+  <form class="max-w-xl mx-auto space-y-6">
+    <div>
+      <label class="block mb-2 font-medium">Full Name</label>
+      <input type="text" name="name" id="name" required class="w-full border px-4 py-2 rounded">
+    </div>
+
+    <div>
+      <label class="block mb-2 font-medium">Email</label>
+      <input type="email" name="email" id="email" required class="w-full border px-4 py-2 rounded">
+    </div>
+
+    <div>
+      <label class="block mb-2 font-medium">Phone Number</label>
+      <input type="tel" name="phone" id="phone" required class="w-full border px-4 py-2 rounded">
+    </div>
+
+    <div>
+      <label class="block mb-2 font-medium">Age</label>
+      <input type="number" name="age" id="age" required class="w-full border px-4 py-2 rounded">
+    </div>
+
+    <div>
+      <label class="block mb-2 font-medium">Select Instruments (Select at least two)</label>
+      <select name="instruments[]" multiple required class="w-full border px-4 py-2 rounded h-48">
+        <option value="Piano">Piano/Keyboard</option>
+        <option value="Lead Guitar">Lead Guitar</option>
+        <option value="Bass Guitar">Bass Guitar</option>
+        <option value="Orchestration">Orchestration</option>
+        <option value="Hawaiian Guitar">Hawaiian Guitar</option>
+        <option value="Violin">Violin</option>
+        <option value="Drumset">Drumset</option>
+        <option value="Talking Drum & Percussions">Talking Drum & Percussions</option>
+        <option value="Saxophone">Saxophone</option>
+        <option value="Trumpet">Trumpet</option>
+        <option value="Clarinet">Clarinet</option>
+        <option value="Flute/Recoder">Flute/Recoder</option>
+        <option value="Trombone">Trombone</option>
+        <option value="Organ Playing">Organ Playing</option>
+        <option value="Music Theory">Music Theory</option>
+        <option value="Sight Reading & Transcription">Sight Reading & Transcription</option>
+        <option value="Harmony">Harmony</option>
+        <option value="Voice Training">Voice Training</option>
+        <option value="Sound Equipment">Sound Equipment</option>
+        <option value="Praise & Adoration">Praise & Adoration</option>
+        <option value="Composition">Composition</option>
+        <option value="Gospel Choir">Gospel Choir</option>
+        <option value="Yoruba Anthem">Yoruba Anthem</option>
+        <option value="Indigenous Choir">Indigenous Choir</option>
+        <option value="Children Choir">Children Choir</option>
+        <option value="Computer in Music">Computer in Music</option>
+        <option value="Choir Management & Conducting">Choir Management & Conducting</option>
+        <option value="Choreographpy & Dance">Choreography & Dance</option>
+        <option value="Halleluyah Chorus">Halleluyah Chorus</option>
+      </select>
+      <p class="text-sm text-gray-500 mt-1">Hold Ctrl (Windows) or Command (Mac) to select multiple options.</p>
+    </div>
+
+    <div>
+      <button type="button" onclick="handlePayment()" class="bg-blue-900 text-white px-6 py-2 rounded w-full md:w-auto">Register & Pay</button>
+    </div>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6 text-center">
+  &copy; 2025 THE MUSIC EXPLOSION. All rights reserved.
+</footer>
+
+<!-- Mobile Menu Script -->
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
+
+<!-- Paystack Payment Script -->
+<script>
+  function handlePayment() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const age = parseInt(document.getElementById('age').value);
+
+    if (!name || !email || !phone || isNaN(age)) {
+      alert("Please fill all fields correctly.");
+      return;
+    }
+
+    let amount = (age >= 3 && age <= 8) ? 4500 : 6000;
+    let handler = PaystackPop.setup({
+      key: 'pk_live_1a8d6fee8ec224dd8a793ecb1fef467a99e1f0fc', // Change to test key in development
+      email: email,
+      amount: amount * 100,
+      currency: "NGN",
+      ref: '' + Math.floor(Math.random() * 1000000000 + 1),
+      metadata: {
+        custom_fields: [
+          { display_name: "Participant Name", variable_name: "name", value: name },
+          { display_name: "Phone Number", variable_name: "phone", value: phone }
+        ]
+      },
+      callback: function(response) {
+        const instruments = Array.from(document.querySelector('select[name="instruments[]"]').selectedOptions).map(opt => opt.value);
+
+        fetch('http://localhost:5000/api/registrations', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            age,
+            instruments,
+            reference: response.reference
+          })
+        })
+        .then(res => res.json())
+        .then(data => {
+          alert('Payment and Registration successful!');
+          window.location.href = "thankyou.html";
+        })
+        .catch(err => {
+          console.error(err);
+          alert('Payment succeeded, but failed to save registration.');
+        });
+      },
+      onClose: function() {
+        alert('Transaction cancelled.');
+      }
+    });
+    handler.openIframe();
+  }
+</script>
+
+</body>
+</html>
